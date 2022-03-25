@@ -17,6 +17,14 @@
     margin: 5rem 0;
 }
 
+.bottom-divider {
+    margin: 5rem 0 0 0;
+}
+
+.featurette-image {
+    border-radius: 25px;
+}
+
 .featurette-heading {
     font-weight: 300;
     line-height: 1;
