@@ -22,3 +22,9 @@
     line-height: 1;
     letter-spacing: -.05rem;
 }
+
+.heading-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
