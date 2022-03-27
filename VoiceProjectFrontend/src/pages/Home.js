@@ -74,132 +74,21 @@ function InfoPanel(props) {
     return props.infoBlocks.map((row, index) =>
         <InfoBlock key={index} image={row.image} order={row.order} heading={row.heading} text={row.text} />)
 }
-const infoBlocks = [
-    {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
-        heading:
-        {
-            primary: "First featurette heading. ",
-            secondary: "It'll blow your mind."
-        },
-        text: "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
-        order: {
-            first: 1,
-            second: 2
-        }
-    },
-    {
-        image: {
-            src: "./images/image5.jpg",
-            alt: "Generic placeholder image"
-        },
-        heading:
-        {
-            primary: "Oh yeah, it's that good. ",
-            secondary: "See for yourself."
-        },
-        text: "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
-        order: {
-            first: 2,
-            second: 1
-        }
-    },
-    {
-        image: {
-            src: "./images/image6.jpg",
-            alt: "Generic placeholder image"
-        },
-        heading:
-        {
-            primary: "And lastly, this one. ",
-            secondary: "Checkmate."
-        },
-        text: "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
-        order: {
-            first: 1,
-            second: 2
-        }
-    },
-]
 
-const headingBlocks = [
-    {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
-        heading: "Heading",
-        text: "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.",
-        button: {
-            text: "View details"
-        }
-    },
-    {
-        image: {
-            src: "./images/image5.jpg",
-            alt: "Generic placeholder image"
-        },
-        heading: "Heading",
-        text: "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.",
-        button: {
-            text: "View details"
-        }
-    },
-    {
-        image: {
-            src: "./images/image6.jpg",
-            alt: "Generic placeholder image"
-        },
-        heading: "Heading",
-        text: "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
-        button: {
-            text: "View details"
-        }
-    },
-]
+function Home(props) {
+    return (
+        <div>
+            <MyCarousel slides={props.slides} />
+            <Container className="marketing">
+                <HeadingPanel headingBlocks={props.headingBlocks} />
 
-const slides = [
-    {
-        image: {
-            src: "./images/image.jpg",
-            alt: "First slide"
-        },
-        label: "First slide label",
-        text: "Nulla vitae elit libero, a pharetra augue mollis interdum."
-    },
-    {
-        image: {
-            src: "./images/image2.jpg",
-            alt: "Second slide"
-        },
-        label: "Second slide label",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        image: {
-            src: "./images/image3.jpg",
-            alt: "Third slide"
-        },
-        label: "Third slide label",
-        text: "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
-    }
-];
+                <InfoPanel infoBlocks={props.infoBlocks} />
 
-const Home = () => (
-    <div>
-        <MyCarousel slides={slides} />
-        <Container className="marketing">
-            <HeadingPanel headingBlocks={headingBlocks} />
+                <hr class="bottom-divider" />
 
-            <InfoPanel infoBlocks={infoBlocks} />
-
-            <hr class="bottom-divider" />
-
-        </Container>
-    </div>
-);
+            </Container>
+        </div>
+    );
+}
 
 export default Home
