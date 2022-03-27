@@ -34,7 +34,7 @@ function MyCarousel(props) {
 
 function HeadingBlock(props) {
     return (
-        <Col lg={4} className="col">
+        <Col lg={4} className="column">
             <img class="rounded-circle heading-image" src={props.image.src} alt={props.image.alt} />
             <h2>{props.heading}</h2>
             <p>{props.text}</p>
@@ -58,11 +58,11 @@ function InfoBlock(props) {
         <>
             <hr class="featurette-divider" />
             <Row className="featurette">
-                <Col md={7, { order: props.order.first }}>
+                <Col md={{ span: 7, order: props.order.first }}>
                     <h2 class="featurette-heading">{props.heading.primary}<span class="text-muted">{props.heading.secondary}</span></h2>
                     <p class="lead">{props.text}</p>
                 </Col>
-                <Col md={5, { order: props.order.second }}>
+                <Col md={{ span: 5, order: props.order.second }}>
                     <img class="featurette-image img-fluid mx-auto" alt={props.image.alt} src={props.image.src} />
                 </Col>
             </Row>

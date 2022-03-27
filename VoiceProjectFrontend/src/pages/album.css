@@ -1,5 +1,40 @@
 :root {
     --jumbotron-padding-y: 3rem;
+    --border-radius: 1rem;
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius) !important;
+    overflow: hidden;
+}
+
+.myPadding {
+    padding: 0 15px;
+}
+.albumImage {
+   /* height: 225px;*/
+    width: 100%;
+    display: block;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.albumCard {
+    background: rgba(255, 255, 255, 0);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .jumbotron {
@@ -37,6 +72,6 @@ footer {
         margin-bottom: .25rem;
     }
 
-.box-shadow {
+/*.box-shadow {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
+}*/
