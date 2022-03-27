@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap';
 import { NavLink, Navigate, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,6 +11,7 @@ function App() {
         <div className="App">
             <NavigationBar />
             <Main />
+            <FooterBar />
         </div>
     );
 }
@@ -151,6 +152,21 @@ const NavigationBar = () => (
             </Nav>
         </Container>
     </Navbar>
+)
+
+const FooterBar = () => (
+    <footer class="text-muted">
+        <Container>
+            <Row>
+                <Col>
+                    &copy; 2022 Valentine Gladyshko &#183; <a href="https://github.com/ValentineGladyshko">GitHub</a> &#183; <a href="#">Terms</a>
+                </Col>
+                <Col sm={2}>
+                    <a href="#">Back to top</a>
+                </Col>
+            </Row>
+        </Container>
+    </footer>
 )
 
 export default App;

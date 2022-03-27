@@ -5,27 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import './album.css';
 
-<ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
-
-function Album(props) {
-    return (
-        <>
-            <section class="jumbotron text-center">
-                <Container>
-                    <h1 class="jumbotron-heading">Album example</h1>
-                    <p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-                    <p>
-                        <Button variant="primary">Main call to action</Button>{' '}
-                        <Button variant="secondary">Secondary action</Button>{' '}
-                    </p>
-                </Container>
-            </section>
-            <ThumbnailsCollection thumbnailsCollection={thumbnailsCollection} />
-
-        </>
-    );
-}
-const url = 'https://www.youtube.com/watch?v=ysz5S6PUM-U';
 const thumbnailsCollection = [
     {
         url: 'https://www.youtube.com/watch?v=KRvv0QdruMQ',
@@ -152,6 +131,27 @@ function ThumbnailsCollection(props) {
                 </Row>
             </Container>
         </div>
+    );
+}
+
+function Album(props) {
+    return (
+        <>
+            <section class="jumbotron text-center">
+                <Container>
+                    <h1 class="jumbotron-heading">Album example</h1>
+                    <p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                    <p>
+                        <Button variant="primary">Main call to action</Button>{' '}
+                        <Button variant="secondary">Secondary action</Button>{' '}
+                    </p>
+                </Container>
+            </section>
+            <ThumbnailsCollection thumbnailsCollection={thumbnailsCollection} />
+            <Container>
+                <hr class="m-0" />
+            </Container>
+        </>
     );
 }
 
