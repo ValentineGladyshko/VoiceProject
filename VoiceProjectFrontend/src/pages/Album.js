@@ -20,18 +20,15 @@ function Album(props) {
                     </p>
                 </Container>
             </section>
-            <ThumbnailsCollection thumbnailsCollection={thumbnailsCollection}/>
+            <ThumbnailsCollection thumbnailsCollection={thumbnailsCollection} />
 
         </>
     );
 }
-
+const url = 'https://www.youtube.com/watch?v=ysz5S6PUM-U';
 const thumbnailsCollection = [
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=KRvv0QdruMQ',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -41,10 +38,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=lheapd7bgLA',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -54,10 +48,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=xAUJYP8tnRE',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -67,10 +58,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=XFqn3uy238E',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -80,10 +68,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=F1Hq8eVOMHs',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -93,10 +78,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=LmpuerlbJu0',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -106,10 +88,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=xaQJbozY_Is',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -119,10 +98,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=yiw6_JakZFc',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -132,10 +108,7 @@ const thumbnailsCollection = [
         }
     },
     {
-        image: {
-            src: "./images/image4.jpg",
-            alt: "Generic placeholder image"
-        },
+        url: 'https://www.youtube.com/watch?v=1-NxodiGPCU',
         text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
         button1: {
             text: "View"
@@ -149,8 +122,10 @@ const thumbnailsCollection = [
 function Thumbnail(props) {
     return (
         <Col md={6} lg={4} className="myPadding">
-            <Card className="mb-4 box-shadow albumCard">       
-                <Card.Img variant="top" className="albumImage" src={props.image.src} alt={props.image.alt} />
+            <Card className="mb-4 box-shadow albumCard">
+                <div className="player-wrapper">
+                    <ReactPlayer className="react-player" url={props.url} controls="true" width="100%" height="100%" />
+                </div>
                 <Card.Body>
                     <Card.Text>{props.text}</Card.Text>
                     <div class="d-flex justify-content-between align-items-center">
@@ -172,7 +147,7 @@ function ThumbnailsCollection(props) {
             <Container className="myPadding">
                 <Row>
                     {props.thumbnailsCollection.map((row, index) =>
-                        <Thumbnail key={index} image={row.image} text={row.text} button1={row.button1} button2={row.button2} />)
+                        <Thumbnail key={index} url={row.url} text={row.text} button1={row.button1} button2={row.button2} />)
                     }
                 </Row>
             </Container>
