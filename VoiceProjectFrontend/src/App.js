@@ -4,6 +4,7 @@ import { NavLink, Navigate, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './pages/Home';
+import Album from './pages/Album';
 
 function App() {
     return (
@@ -130,7 +131,8 @@ const slides = [
 
 const Main = () => (
     <Routes>
-        <Route path='/' element={<Home slides={slides} headingBlocks={headingBlocks} infoBlocks={infoBlocks}/>}></Route>
+        <Route path='/' element={<Home slides={slides} headingBlocks={headingBlocks} infoBlocks={infoBlocks} />}></Route>
+        <Route path='/album' element={<Album />}></Route>
         {/*<Route path='/news' element={<News />}></Route>*/}
     </Routes>
 );
@@ -142,6 +144,9 @@ const NavigationBar = () => (
             <Nav className="me-auto">
                 <NavLink className="nav-link" to="/">
                     Home
+                </NavLink>
+                <NavLink className="nav-link" to="/album">
+                    Album
                 </NavLink>
             </Nav>
         </Container>
