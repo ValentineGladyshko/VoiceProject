@@ -1,0 +1,26 @@
+[
+    {
+        "image": {
+            "src": "./images/image.jpg",
+            "alt": "First slide"
+        },
+        "label": "First slide label",
+        "text": "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },
+    {
+        "image": {
+            "src": "./images/image2.jpg",
+            "alt": "Second slide"
+        },
+        "label": "Second slide label",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "image": {
+            "src": "./images/image3.jpg",
+            "alt": "Third slide"
+        },
+        "label": "Third slide label",
+        "text": "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    }
+]

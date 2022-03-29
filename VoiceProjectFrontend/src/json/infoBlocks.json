@@ -1,0 +1,47 @@
+[
+    {
+        "image": {
+            "src": "./images/image4.jpg",
+            "alt": "Generic placeholder image"
+        },
+        "heading": {
+            "primary": "First featurette heading. ",
+            "secondary": "It'll blow your mind."
+        },
+        "text": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+        "order": {
+            "first": 1,
+            "second": 2
+        }
+    },
+    {
+        "image": {
+            "src": "./images/image5.jpg",
+            "alt": "Generic placeholder image"
+        },
+        "heading": {
+            "primary": "Oh yeah, it's that good. ",
+            "secondary": "See for yourself."
+        },
+        "text": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+        "order": {
+            "first": 2,
+            "second": 1
+        }
+    },
+    {
+        "image": {
+            "src": "./images/image6.jpg",
+            "alt": "Generic placeholder image"
+        },
+        "heading": {
+            "primary": "And lastly, this one. ",
+            "secondary": "Checkmate."
+        },
+        "text": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+        "order": {
+            "first": 1,
+            "second": 2
+        }
+    }
+]
