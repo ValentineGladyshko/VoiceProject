@@ -130,10 +130,103 @@ const slides = [
     }
 ];
 
+const thumbnailsCollection = [
+    {
+        url: 'https://www.youtube.com/watch?v=KRvv0QdruMQ',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=lheapd7bgLA',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=xAUJYP8tnRE',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=XFqn3uy238E',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=F1Hq8eVOMHs',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=LmpuerlbJu0',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=xaQJbozY_Is',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=yiw6_JakZFc',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+    {
+        url: 'https://www.youtube.com/watch?v=1-NxodiGPCU',
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        button1: {
+            text: "View"
+        },
+        button2: {
+            text: "Edit"
+        }
+    },
+]
+
 const Main = () => (
     <Routes>
         <Route path='/' element={<Home slides={slides} headingBlocks={headingBlocks} infoBlocks={infoBlocks} />}></Route>
-        <Route path='/album' element={<Album />}></Route>
+        <Route path='/album' element={<Album thumbnailsCollection={thumbnailsCollection}/>}></Route>
         {/*<Route path='/news' element={<News />}></Route>*/}
     </Routes>
 );
