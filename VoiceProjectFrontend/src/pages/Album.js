@@ -11,11 +11,11 @@ function Thumbnail(props) {
         <Col md={6} lg={4} className="myPadding">
             <Card className="mb-4 box-shadow albumCard">
                 <div className="player-wrapper">
-                    <ReactPlayer className="react-player" url={props.url} controls="true" width="100%" height="100%" />
+                    <ReactPlayer className="react-player" url={props.url} controls={true} width="100%" height="100%" />
                 </div>
                 <Card.Body>
                     <Card.Text>{props.text}</Card.Text>
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-between align-items-center">
                         <ButtonGroup size="sm">
                             <Button variant="outline-light">{props.button1.text}</Button>{' '}
                             <Button variant="outline-light">{props.button2.text}</Button>{' '}
@@ -30,7 +30,7 @@ function Thumbnail(props) {
 
 function ThumbnailsCollection(props) {
     return (
-        <div class="py-5">
+        <div className="py-5">
             <Container className="myPadding">
                 <Row>
                     {props.thumbnailsCollection.map((row, index) =>
@@ -45,10 +45,10 @@ function ThumbnailsCollection(props) {
 function Album(props) {
     return (
         <>
-            <section class="jumbotron text-center">
+            <section className="jumbotron text-center">
                 <Container>
-                    <h1 class="jumbotron-heading">Album example</h1>
-                    <p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                    <h1 className="jumbotron-heading">Album example</h1>
+                    <p className="lead">Something short and leading about the collection below-its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
                     <p>
                         <Button variant="primary">Main call to action</Button>{' '}
                         <Button variant="secondary">Secondary action</Button>{' '}
@@ -57,7 +57,7 @@ function Album(props) {
             </section>
             <ThumbnailsCollection thumbnailsCollection={props.thumbnailsCollection} />
             <Container>
-                <hr class="m-0" />
+                <hr className="m-0" />
             </Container>
         </>
     );

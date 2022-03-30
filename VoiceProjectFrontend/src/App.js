@@ -5,20 +5,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './pages/Home';
 import Album from './pages/Album';
+import NavigationBar from './pages/NavigationBar';
 import headingBlocks from './json/headingBlocks.json';
 import infoBlocks from './json/infoBlocks.json';
 import thumbnailsCollection from './json/thumbnailsCollection.json';
 import slides from './json/slides.json';
-
-headingBlocks = [...headingBlocks];
-infoBlocks = [...infoBlocks];
-thumbnailsCollection = [...thumbnailsCollection];
-slides = [...slides];
+import navLinks from './json/navLinks.json';
 
 function App() {
     return (
         <div className="App">
-            <NavigationBar />
+            <NavigationBar navLinks={navLinks}/>
             <Main />
             <FooterBar />
         </div>
@@ -29,28 +26,11 @@ const Main = () => (
     <Routes>
         <Route path='/' element={<Home slides={slides} headingBlocks={headingBlocks} infoBlocks={infoBlocks} />}></Route>
         <Route path='/album' element={<Album thumbnailsCollection={thumbnailsCollection} />}></Route>
-        {/*<Route path='/news' element={<News />}></Route>*/}
     </Routes>
 );
 
-const NavigationBar = () => (
-    <Navbar bg="dark" variant="dark" sticky="top">
-        <Container>
-            {/*<Navbar.Brand href="/news">News</Navbar.Brand>*/}
-            <Nav className="me-auto">
-                <NavLink className="nav-link" to="/">
-                    Home
-                </NavLink>
-                <NavLink className="nav-link" to="/album">
-                    Album
-                </NavLink>
-            </Nav>
-        </Container>
-    </Navbar>
-)
-
 const FooterBar = () => (
-    <footer class="text-muted">
+    <footer className="text-muted">
         <Container>
             <Row>
                 <Col>
