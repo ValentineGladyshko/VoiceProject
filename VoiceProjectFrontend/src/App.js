@@ -6,18 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import Album from './pages/Album';
 import NavigationBar from './pages/NavigationBar';
+import FooterBar from './pages/FooterBar';
 import headingBlocks from './json/headingBlocks.json';
 import infoBlocks from './json/infoBlocks.json';
 import thumbnailsCollection from './json/thumbnailsCollection.json';
 import slides from './json/slides.json';
 import navLinks from './json/navLinks.json';
+import footerContent from './json/footerContent.json';
 
 function App() {
     return (
         <div className="App">
             <NavigationBar navLinks={navLinks}/>
             <Main />
-            <FooterBar />
+            <FooterBar text1={footerContent.text1} text2={footerContent.text2} link1={footerContent.link1} link2={footerContent.link2} link3={footerContent.link3}/>
         </div>
     );
 }
@@ -28,20 +30,5 @@ const Main = () => (
         <Route path='/album' element={<Album thumbnailsCollection={thumbnailsCollection} />}></Route>
     </Routes>
 );
-
-const FooterBar = () => (
-    <footer className="text-muted">
-        <Container>
-            <Row>
-                <Col>
-                    &copy; 2022 Valentine Gladyshko &#183; <a href="https://github.com/ValentineGladyshko">GitHub</a> &#183; <a href="#">Terms</a>
-                </Col>
-                <Col sm={2}>
-                    <a href="#">Back to top</a>
-                </Col>
-            </Row>
-        </Container>
-    </footer>
-)
 
 export default App;

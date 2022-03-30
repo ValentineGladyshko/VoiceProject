@@ -1,6 +1,6 @@
-import { React, Component, useState } from 'react';
-import { Container, Nav, Navbar, Carousel, Button } from 'react-bootstrap';
-import { NavLink, Navigate, Routes, Route } from 'react-router-dom';
+import { React } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavigationBar(props) {
