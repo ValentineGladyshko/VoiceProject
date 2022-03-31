@@ -47,15 +47,15 @@ function Album(props) {
         <>
             <section className="jumbotron text-center">
                 <Container>
-                    <h1 className="jumbotron-heading">Album example</h1>
-                    <p className="lead">Something short and leading about the collection below-its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                    <h1 className="jumbotron-heading">{props.albumContent.heading}</h1>
+                    <p className="lead">{props.albumContent.text}</p>
                     <p>
-                        <Button variant="primary">Main call to action</Button>{' '}
-                        <Button variant="secondary">Secondary action</Button>{' '}
+                        <Button variant="primary">{props.albumContent.button1.text}</Button>{' '}
+                        <Button variant="secondary">{props.albumContent.button2.text}</Button>{' '}
                     </p>
                 </Container>
             </section>
-            <ThumbnailsCollection thumbnailsCollection={props.thumbnailsCollection} />
+            <ThumbnailsCollection thumbnailsCollection={props.albumContent.thumbnailsCollection} />
             <Container>
                 <hr className="m-0" />
             </Container>
