@@ -4,15 +4,7 @@
         "link": "/en"
     },
     {
-        "text": "Home",
-        "link": "/ua"
-    },
-    {
         "text": "Album",
         "link": "/en/album"
-    },
-    {
-        "text": "Album",
-        "link": "/ua/album"
     }
 ]

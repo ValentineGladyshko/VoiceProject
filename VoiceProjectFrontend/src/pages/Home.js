@@ -38,7 +38,7 @@ function HeadingBlock(props) {
             <img className="rounded-circle heading-image" src={props.image.src} alt={props.image.alt} />
             <h2>{props.heading}</h2>
             <p>{props.text}</p>
-            <Button variant="secondary">{props.button.text}</Button>{' '}
+            <Button variant="secondary">{props.button.text}</Button>
         </Col>
     );
 }

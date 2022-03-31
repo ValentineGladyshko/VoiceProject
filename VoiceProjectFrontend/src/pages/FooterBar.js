@@ -8,11 +8,13 @@ function FooterBar(props) {
             <Container>
                 <Row>
                    <Col>
-                       {props.text1} <a href={props.link1.href}>{props.link1.text}</a> {props.text2} <a href={props.link2.href}>{props.link2.text}</a>
-                        {/*&copy; 2022 Valentine Gladyshko &#183; <a href="https://github.com/ValentineGladyshko">GitHub</a> &#183; <a href="#">Terms</a>*/}
+                       {props.footerContent.text1}
+                       <a href={props.footerContent.link1.href}>{props.footerContent.link1.text}</a>
+                       {props.footerContent.text2}
+                       <a href={props.footerContent.link2.href}>{props.footerContent.link2.text}</a>
                     </Col>
                     <Col sm={2}>
-                       <a href={props.link3.href}>{props.link3.text}</a>
+                       <a href={props.footerContent.link3.href}>{props.footerContent.link3.text}</a>
                     </Col>
                 </Row>
             </Container>

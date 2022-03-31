@@ -17,8 +17,8 @@ function Thumbnail(props) {
                     <Card.Text>{props.text}</Card.Text>
                     <div className="d-flex justify-content-between align-items-center">
                         <ButtonGroup size="sm">
-                            <Button variant="outline-light">{props.button1.text}</Button>{' '}
-                            <Button variant="outline-light">{props.button2.text}</Button>{' '}
+                            <Button variant="outline-light">{props.button1.text}</Button>
+                            <Button variant="outline-light">{props.button2.text}</Button>
                         </ButtonGroup>
                         <small>9 mins</small>
                     </div>
