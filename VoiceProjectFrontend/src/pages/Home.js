@@ -78,11 +78,11 @@ function InfoPanel(props) {
 function Home(props) {
     return (
         <>
-            <MyCarousel slides={props.slides} />
+            <MyCarousel slides={props.homeContent.slides} />
             <Container className="marketing">
-                <HeadingPanel headingBlocks={props.headingBlocks} />
+                <HeadingPanel headingBlocks={props.homeContent.headingBlocks} />
 
-                <InfoPanel infoBlocks={props.infoBlocks} />
+                <InfoPanel infoBlocks={props.homeContent.infoBlocks} />
 
                 <hr className="bottom-divider" />
 
