@@ -56,9 +56,6 @@ function Album(props) {
                 </Container>
             </section>
             <ThumbnailsCollection thumbnailsCollection={props.albumContent.thumbnailsCollection} />
-            <Container>
-                <hr className="m-0" />
-            </Container>
         </>
     );
 }

@@ -81,11 +81,8 @@ function Home(props) {
             <MyCarousel slides={props.homeContent.slides} />
             <Container className="marketing">
                 <HeadingPanel headingBlocks={props.homeContent.headingBlocks} />
-
                 <InfoPanel infoBlocks={props.homeContent.infoBlocks} />
-
-                <hr className="bottom-divider" />
-
+                {/*<hr className="bottom-divider" />*/}
             </Container>
         </>
     );
