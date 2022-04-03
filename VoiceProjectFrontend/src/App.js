@@ -19,6 +19,9 @@ import notFoundContentRu from './json/ru/notFoundContent.json';
 import notFoundContentEn from './json/en/notFoundContent.json';
 
 import albumContentEn from './json/en/albumContent.json';
+
+import homeContentUa from './json/ua/homeContent.json';
+import homeContentRu from './json/ru/homeContent.json';
 import homeContentEn from './json/en/homeContent.json';
 
 import footerContentUa from './json/ua/footerContent.json';
@@ -30,12 +33,12 @@ function App() {
         <Routes>
             <Route path='/' element={<Navigate to="/en" replace />}></Route>
             <Route path='/ua' element={<Main navLinks={navLinksUa} footerContent={footerContentUa} />}>
-                <Route index element={<Home homeContent={homeContentEn} />} />
+                <Route index element={<Home homeContent={homeContentUa} />} />
                 <Route path="album" element={<Album albumContent={albumContentEn} />} />
                 <Route path="*" element={<NotFound notFoundContent={notFoundContentUa}/>} />
             </Route>
             <Route path='/ru' element={<Main navLinks={navLinksRu} footerContent={footerContentRu} />}>
-                <Route index element={<Home homeContent={homeContentEn} />} />
+                <Route index element={<Home homeContent={homeContentRu} />} />
                 <Route path="album" element={<Album albumContent={albumContentEn} />} />
                 <Route path="*" element={<NotFound notFoundContent={notFoundContentRu}/>} />
             </Route>

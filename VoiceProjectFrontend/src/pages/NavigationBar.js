@@ -18,17 +18,11 @@ function NavigationBar(props) {
                     <NavLinks navLinks={props.navLinks} />
                 </Nav>
                 <Nav>
-                    <NavLink to="/ua" className="d-flex nav-link py-0">
+                    <NavLink to="/gb" className="d-flex nav-link py-0">
                         <i className="bi bi-tiktok my-auto" style={{ fontSize: 22 }}></i>
                     </NavLink>
-                    <NavLink to="/ru" className="d-flex nav-link py-0">
+                    <NavLink to="/gb" className="d-flex nav-link py-0">
                         <i className="bi bi-instagram my-auto" style={{ fontSize: 22 }}></i>
-                    </NavLink>
-                    <NavLink to="/ua" className="nav-link">
-                        <i className="bi bi-tiktok"></i>
-                    </NavLink>
-                    <NavLink to="/ru" className="nav-link">
-                        <i className="bi bi-instagram"></i>
                     </NavLink>
                     {languages.map((language) => (
                         <NavLink

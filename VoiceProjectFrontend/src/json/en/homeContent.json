@@ -1,4 +1,5 @@
 {
+    "heading": "Work examples",
     "slides": [
         {
             "image": {
@@ -44,6 +45,17 @@
             },
             "heading": "Heading",
             "text": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.",
+            "button": {
+                "text": "View details \u00BB"
+            }
+        },
+        {
+            "image": {
+                "src": "./images/image6.jpg",
+                "alt": "Generic placeholder image"
+            },
+            "heading": "Heading",
+            "text": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
             "button": {
                 "text": "View details \u00BB"
             }

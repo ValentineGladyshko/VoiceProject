@@ -6,9 +6,9 @@ import '../index.css';
 import './album.css';
 
 
-function Thumbnail(props) {
+function VideoThumbnail(props) {
     return (
-        <Col md={6} lg={4} className="myPadding">
+        <Col md={6} lg={4}>
             <Card className="mb-4 box-shadow albumCard">
                 <div className="player-wrapper">
                     <ReactPlayer className="react-player" url={props.url} controls={true} width="100%" height="100%" />
@@ -28,13 +28,13 @@ function Thumbnail(props) {
     );
 }
 
-function ThumbnailsCollection(props) {
+function VideoThumbnailsCollection(props) {
     return (
         <div className="py-5">
-            <Container className="myPadding">
+            <Container>
                 <Row>
                     {props.thumbnailsCollection.map((row, index) =>
-                        <Thumbnail key={index} url={row.url} text={row.text} button1={row.button1} button2={row.button2} />)
+                        <VideoThumbnail key={index} url={row.url} text={row.text} button1={row.button1} button2={row.button2} />)
                     }
                 </Row>
             </Container>
@@ -55,7 +55,7 @@ function Album(props) {
                     </p>
                 </Container>
             </section>
-            <ThumbnailsCollection thumbnailsCollection={props.albumContent.thumbnailsCollection} />
+            <VideoThumbnailsCollection thumbnailsCollection={props.albumContent.thumbnailsCollection} />
         </>
     );
 }
