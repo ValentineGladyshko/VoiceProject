@@ -11,7 +11,7 @@ function FooterBar(props) {
             <footer className="text-muted">
                 <Container>
                     <Row className="text-center">
-                        <Col xl={4} md={6} className="mb-2">
+                        <Col xl={4} md={6} className="mb-3">
                             <h4 class="text-uppercase mb-2">{props.footerContent.header1}</h4>
                             <Row>
                                 {props.footerContent.contacts.map((row, index) =>
@@ -19,14 +19,14 @@ function FooterBar(props) {
                                 }
                             </Row>
                         </Col>
-                        <Col xl={4} md={6} className="mb-2">
-                            <h4 class="text-uppercase mb-4">{props.footerContent.header2}</h4>
+                        <Col xl={4} md={6} className="mb-3">
+                            <h4 class="text-uppercase mb-3">{props.footerContent.header2}</h4>
                             {props.footerContent.socialMedia.map((row, index) =>
                                 <SocialMediaButton key={index} data={row} />)
                             }
                         </Col>
-                        <Col xl={4} className="mb-2">
-                            <h4 class="text-uppercase mb-4">{props.footerContent.header3}</h4>
+                        <Col xl={4} className="mb-3">
+                            <h4 class="text-uppercase mb-3">{props.footerContent.header3}</h4>
                             {props.footerContent.developerContacts.map((row, index) =>
                                 <SocialMediaButton key={index} data={row} />)
                             }
@@ -50,7 +50,7 @@ function SocialMediaButton(props) {
 
 function Contact(props) {
     return (
-        <Col className="pe-1 ps-0">
+        <Col className="px-1">
             <svg className="my-auto" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
                 <path d={props.data.path} />
             </svg>

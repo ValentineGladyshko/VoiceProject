@@ -1,5 +1,6 @@
 import { React, Component, useState } from 'react';
 import { Container, Col, Row, Carousel, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import './home.css';
@@ -35,10 +36,14 @@ function MyCarousel(props) {
 function HeadingBlock(props) {
     return (
         <Col xl={3} md={6} className="column">
-            <img className="rounded-circle heading-image" src={props.image.src} alt={props.image.alt} />
-            <h2>{props.heading}</h2>
-            <p>{props.text}</p>
-            <Button variant="secondary">{props.button.text}</Button>
+            <img className="rounded-circle heading-image" src={props.data.image.src} alt={props.data.image.alt} />
+            <h2>{props.data.heading}</h2>
+            <p>{props.data.text}</p>
+            <Link className="btn btn-secondary" to={{
+                pathname: "album", hash: props.data.button.link
+            }}>
+                {props.data.button.text}
+            </Link>
         </Col>
     );
 }
@@ -47,7 +52,7 @@ function HeadingPanel(props) {
     return (
         <Row>
             {props.headingBlocks.map((row, index) =>
-                <HeadingBlock key={index} image={row.image} button={row.button} heading={row.heading} text={row.text} />)
+                <HeadingBlock key={index} data={row} />)
             }
         </Row>
     );

@@ -35,7 +35,8 @@
             "heading": "Примеры рекламы",
             "text": "Какой то текст",
             "button": {
-                "text": "Текст кнопки \u00BB"
+                "text": "Текст кнопки \u00BB",
+                "link": "#advertisingExamples"
             }
         },
         {
@@ -46,7 +47,8 @@
             "heading": "Бизнес-презентации",
             "text": "Какой то текст",
             "button": {
-                "text": "Текст кнопки \u00BB"
+                "text": "Текст кнопки \u00BB",
+                "link": "#businessPresentations"
             }
         },
         {
@@ -57,7 +59,8 @@
             "heading": "Аудиокниги",
             "text": "Какой то текст",
             "button": {
-                "text": "Текст кнопки \u00BB"
+                "text": "Текст кнопки \u00BB",
+                "link": "#audiobooks"
             }
         },
         {
@@ -65,10 +68,11 @@
                 "src": "./images/image6.jpg",
                 "alt": "Generic placeholder image"
             },
-            "heading": "Игровая подача",
+            "heading": "Закадровое звучание и дубляж",
             "text": "Какой то текст",
             "button": {
-                "text": "Текст кнопки \u00BB"
+                "text": "Текст кнопки \u00BB",
+                "link": "#dubbing"
             }
         }
     ],
