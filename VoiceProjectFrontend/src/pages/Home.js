@@ -35,7 +35,7 @@ function MyCarousel(props) {
 
 function HeadingBlock(props) {
     return (
-        <Col xl={3} md={6} className="column">
+        <Col xxl={3} md={6} className="column">
             <img className="rounded-circle heading-image" src={props.data.image.src} alt={props.data.image.alt} />
             <h2>{props.data.heading}</h2>
             <p>{props.data.text}</p>

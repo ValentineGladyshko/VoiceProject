@@ -1,0 +1,49 @@
+{
+    "heading": "Chronometer",
+    "text": "This is the instrument to meter the duration of voice acting for the provided text",
+    "inputTextarea": {
+        "heading": "Your text:",
+        "placeholder": "Type or paste text to measure...",
+        "button": {
+            "text": "Clear text"
+        },
+        "checkboxes": [
+            {
+                "id": "numbersToWords",
+                "label": "Convert integers to words",
+                "isChecked": "true"
+            },
+            {
+                "id": "textInBrackets",
+                "label": "Exclude text in brackets",
+                "isChecked": ""
+            },
+            {
+                "id": "resultInMinutes",
+                "label": "Show results in minutes",
+                "isChecked": "true"
+            }
+        ]
+    },
+    "outputTextarea": {
+        "heading": "Processed text:",
+        "outputForms": [
+            {
+                "id": "numberOfWords",
+                "label": "number of words"
+            },
+            {
+                "id": "numberOfSymbols",
+                "label": "symbols"
+            },
+            {
+                "id": "numberOfSymbolsWithoutSpaces",
+                "label": "symbols without spaces"
+            },
+            {
+                "id": "numberOfPages",
+                "label": "A4, Times New Roman, 14pt"
+            }
+        ]
+    }
+}

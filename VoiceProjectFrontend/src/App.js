@@ -9,6 +9,7 @@ import Album from './pages/Album';
 import NavigationBar from './pages/NavigationBar';
 import FooterBar from './pages/FooterBar';
 import NotFound from './pages/NotFound';
+import Chronometer from './pages/Chronometer';
 
 import navLinksUa from './json/ua/navLinks.json';
 import navLinksRu from './json/ru/navLinks.json';
@@ -17,6 +18,8 @@ import navLinksEn from './json/en/navLinks.json';
 import notFoundContentUa from './json/ua/notFoundContent.json';
 import notFoundContentRu from './json/ru/notFoundContent.json';
 import notFoundContentEn from './json/en/notFoundContent.json';
+
+import chronometerContentEn from './json/en/chronometerContent.json';
 
 import albumContentUa from './json/ua/albumContent.json';
 import albumContentRu from './json/ru/albumContent.json';
@@ -62,16 +65,19 @@ function App() {
             <Route path='/ua' element={<Main navLinks={navLinksUa} footerContent={footerContentUa} />}>
                 <Route index element={<Home homeContent={homeContentUa} />} />
                 <Route path="album" element={<Album albumContent={albumContentUa} />} />
+                <Route path="chronometer" element={<Chronometer chronometerContent={chronometerContentEn}/>} />
                 <Route path="*" element={<NotFound notFoundContent={notFoundContentUa}/>} />
             </Route>
             <Route path='/ru' element={<Main navLinks={navLinksRu} footerContent={footerContentRu} />}>
                 <Route index element={<Home homeContent={homeContentRu} />} />
                 <Route path="album" element={<Album albumContent={albumContentRu} />} />
+                <Route path="chronometer" element={<Chronometer chronometerContent={chronometerContentEn} />} />
                 <Route path="*" element={<NotFound notFoundContent={notFoundContentRu}/>} />
             </Route>
             <Route path='/en' element={<Main navLinks={navLinksEn} footerContent={footerContentEn} />}>
                 <Route index element={<Home homeContent={homeContentEn} />} />
                 <Route path="album" element={<Album albumContent={albumContentEn} />} />
+                <Route path="chronometer" element={<Chronometer chronometerContent={chronometerContentEn} />} />
                 <Route path="*" element={<NotFound notFoundContent={notFoundContentEn}/>} />
             </Route>
             <Route path="*" element={<Navigate to="/en" replace />} />
