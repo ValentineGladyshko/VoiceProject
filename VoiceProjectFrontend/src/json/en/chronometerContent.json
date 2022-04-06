@@ -6,44 +6,49 @@
         "placeholder": "Type or paste text to measure...",
         "button": {
             "text": "Clear text"
+        }
+    },
+    "checkboxes": {
+        "numbersToWords": {
+            "id": "numbersToWords",
+            "label": "Convert integers to words",
+            "isChecked": true
         },
-        "checkboxes": [
-            {
-                "id": "numbersToWords",
-                "label": "Convert integers to words",
-                "isChecked": "true"
-            },
-            {
-                "id": "textInBrackets",
-                "label": "Exclude text in brackets",
-                "isChecked": ""
-            },
-            {
-                "id": "resultInMinutes",
-                "label": "Show results in minutes",
-                "isChecked": "true"
-            }
-        ]
+        "textInBrackets": {
+            "id": "textInBrackets",
+            "label": "Exclude text in brackets",
+            "isChecked": false
+        },
+        "resultInMinutes": {
+            "id": "resultInMinutes",
+            "label": "Show results in minutes",
+            "isChecked": true
+        }
     },
     "outputTextarea": {
-        "heading": "Processed text:",
-        "outputForms": [
-            {
-                "id": "numberOfWords",
-                "label": "number of words"
-            },
-            {
-                "id": "numberOfSymbols",
-                "label": "symbols"
-            },
-            {
-                "id": "numberOfSymbolsWithoutSpaces",
-                "label": "symbols without spaces"
-            },
-            {
-                "id": "numberOfPages",
-                "label": "A4, Times New Roman, 14pt"
-            }
-        ]
+        "heading": "Processed text:"
+    },
+    "outputForms": {
+        "numberOfWords": {
+            "id": "numberOfWords",
+            "label": "number of words"
+        },
+        "numberOfSymbols": {
+            "id": "numberOfSymbols",
+            "label": "symbols"
+        },
+        "numberOfSymbolsWithoutSpaces": {
+            "id": "numberOfSymbolsWithoutSpaces",
+            "label": "symbols without spaces"
+        },
+        "numberOfPages": {
+            "id": "numberOfPages",
+            "label": "A4, Times New Roman, 14pt"
+        }
+    },
+    "timeNames": {
+        "seconds": "sec",
+        "minutes": "min",
+        "pages": "pages"
     }
 }
