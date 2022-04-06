@@ -19,6 +19,8 @@ import notFoundContentUa from './json/ua/notFoundContent.json';
 import notFoundContentRu from './json/ru/notFoundContent.json';
 import notFoundContentEn from './json/en/notFoundContent.json';
 
+import chronometerContentUa from './json/ua/chronometerContent.json';
+import chronometerContentRu from './json/ru/chronometerContent.json';
 import chronometerContentEn from './json/en/chronometerContent.json';
 
 import albumContentUa from './json/ua/albumContent.json';
@@ -65,13 +67,13 @@ function App() {
             <Route path='/ua' element={<Main navLinks={navLinksUa} footerContent={footerContentUa} />}>
                 <Route index element={<Home homeContent={homeContentUa} />} />
                 <Route path="album" element={<Album albumContent={albumContentUa} />} />
-                <Route path="chronometer" element={<Chronometer chronometerContent={chronometerContentEn}/>} />
+                <Route path="chronometer" element={<Chronometer chronometerContent={chronometerContentUa}/>} />
                 <Route path="*" element={<NotFound notFoundContent={notFoundContentUa}/>} />
             </Route>
             <Route path='/ru' element={<Main navLinks={navLinksRu} footerContent={footerContentRu} />}>
                 <Route index element={<Home homeContent={homeContentRu} />} />
                 <Route path="album" element={<Album albumContent={albumContentRu} />} />
-                <Route path="chronometer" element={<Chronometer chronometerContent={chronometerContentEn} />} />
+                <Route path="chronometer" element={<Chronometer chronometerContent={chronometerContentRu} />} />
                 <Route path="*" element={<NotFound notFoundContent={notFoundContentRu}/>} />
             </Route>
             <Route path='/en' element={<Main navLinks={navLinksEn} footerContent={footerContentEn} />}>

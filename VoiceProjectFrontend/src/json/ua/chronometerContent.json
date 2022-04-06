@@ -1,0 +1,54 @@
+{
+    "heading": "Хронометр",
+    "text": "Це інструмент для вимірювання тривалості озвучування наданого тексту",
+    "inputTextarea": {
+        "heading": "Твій текст:",
+        "placeholder": "Введіть або вставте текст для підрахунку...",
+        "button": {
+            "text": "Очистити текст"
+        }
+    },
+    "checkboxes": {
+        "numbersToWords": {
+            "id": "numbersToWords",
+            "label": "Перетворення цілих чисел в слова",
+            "isChecked": true
+        },
+        "textInBrackets": {
+            "id": "textInBrackets",
+            "label": "Виключити текст у дужках",
+            "isChecked": false
+        },
+        "resultInMinutes": {
+            "id": "resultInMinutes",
+            "label": "Показувати результат у хвилинах",
+            "isChecked": true
+        }
+    },
+    "outputTextarea": {
+        "heading": "Оброблений текст:"
+    },
+    "outputForms": {
+        "numberOfWords": {
+            "id": "numberOfWords",
+            "label": "кількість слів"
+        },
+        "numberOfSymbols": {
+            "id": "numberOfSymbols",
+            "label": "знаків"
+        },
+        "numberOfSymbolsWithoutSpaces": {
+            "id": "numberOfSymbolsWithoutSpaces",
+            "label": "знаків без пробілів"
+        },
+        "numberOfPages": {
+            "id": "numberOfPages",
+            "label": "A4, Times New Roman, 14pt"
+        }
+    },
+    "timeNames": {
+        "seconds": "сек",
+        "minutes": "мін",
+        "pages": "стр."
+    }
+}

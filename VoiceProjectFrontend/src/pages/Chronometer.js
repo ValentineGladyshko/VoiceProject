@@ -13,11 +13,11 @@ class Chronometer extends Component {
             numbersToWords: props.chronometerContent.checkboxes.numbersToWords.isChecked,
             textInBrackets: props.chronometerContent.checkboxes.textInBrackets.isChecked,
             resultInMinutes: props.chronometerContent.checkboxes.resultInMinutes.isChecked,
-            time: "0 sec",
+            time: "0 " + props.chronometerContent.timeNames.seconds,
             numberOfWords: "0",
             numberOfSymbols: "0",
             numberOfSymbolsWithoutSpaces: "0",
-            numberOfPages: "0 pages"
+            numberOfPages: "0 " + props.chronometerContent.timeNames.pages
         };
 
         this.handleChangeInputTextarea = this.handleChangeInputTextarea.bind(this);
@@ -46,8 +46,8 @@ class Chronometer extends Component {
                     numberOfSymbols: 0,
                     numberOfWords: 0,
                     numberOfSymbolsWithoutSpaces: 0,
-                    time: "0 sec",
-                    numberOfPages: "0 pages"
+                    time: "0 " + this.props.chronometerContent.timeNames.seconds,
+                    numberOfPages: "0 " + this.props.chronometerContent.timeNames.pages
                 });
         }
         else {
@@ -65,9 +65,14 @@ class Chronometer extends Component {
             var seconds = this.props.chronometerContent.timeNames.seconds;
             var minutes = this.props.chronometerContent.timeNames.minutes;
 
-            if (checkboxes.resultInMinutes) {
-                time += Math.floor(minTime / 60) + " " + minutes + " " + (minTime % 60) + " " + seconds
-                    + " – \n" + Math.floor(maxTime / 60) + " " + minutes + " " + (maxTime % 60) + " " + seconds;
+            if (checkboxes.resultInMinutes && Math.floor(maxTime / 60)) {
+                if (Math.floor(minTime / 60)) {
+                    time += Math.floor(minTime / 60) + " " + minutes + " " + (minTime % 60);
+                }
+                else {
+                    time += minTime
+                }
+                time += " " + seconds + " – \n" + Math.floor(maxTime / 60) + " " + minutes + " " + (maxTime % 60) + " " + seconds;
             }
             else {
                 time += minTime + " " + seconds + " – " + maxTime + " " + seconds;
@@ -152,7 +157,7 @@ class Chronometer extends Component {
                                             {this.props.chronometerContent.inputTextarea.button.text}
                                         </Button>
                                     </Col>
-                                    <Col lg={7} md={9}>
+                                    <Col lg={9} xl={7}>
                                         <Checkbox data={this.props.chronometerContent.checkboxes.numbersToWords} newThis={this} />
                                         <Checkbox data={this.props.chronometerContent.checkboxes.textInBrackets} newThis={this} />
                                         <hr className="my-1" />

@@ -6,5 +6,9 @@
     {
         "text": "Альбом",
         "link": "/ru/album"
+    },
+    {
+        "text": "Хронометр",
+        "link": "/ru/chronometer"
     }
 ]
