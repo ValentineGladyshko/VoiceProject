@@ -12,28 +12,34 @@ function NavigationBar(props) {
     ];
 
     return (
-        <Navbar bg="dark" variant="dark" sticky="top">
+        <Navbar bg="dark" variant="dark" sticky="top" expand="sm">
             <Container>
-                <Nav className="me-auto">
-                    <NavLinks navLinks={props.navLinks} />
-                </Nav>
                 <Nav>
-                    <NavLink to="/gb" className="d-flex nav-link py-0">
-                        <i className="bi bi-tiktok my-auto" style={{ fontSize: 22 }}></i>
-                    </NavLink>
-                    <NavLink to="/gb" className="d-flex nav-link py-0">
-                        <i className="bi bi-instagram my-auto" style={{ fontSize: 22 }}></i>
-                    </NavLink>
-                    {languages.map((language) => (
-                        <NavLink
-                            key={language.name}
-                            to={language.href}
-                            className="nav-link"
-                        >
-                            {language.name}
-                        </NavLink>
-                    ))}
+                    <NavLink className="nav-link" to={props.navLinks.main.link}>{props.navLinks.main.text}</NavLink>
                 </Nav>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <NavLinks navLinks={props.navLinks.navLinks} />
+                    </Nav>
+                    <Nav>
+                        <NavLink to="/gb" className="d-flex nav-link py-0">
+                            <i className="bi bi-tiktok my-auto" style={{ fontSize: 22 }}></i>
+                        </NavLink>
+                        <NavLink to="/gb" className="d-flex nav-link py-0">
+                            <i className="bi bi-instagram my-auto" style={{ fontSize: 22 }}></i>
+                        </NavLink>
+                        {languages.map((language) => (
+                            <NavLink
+                                key={language.name}
+                                to={language.href}
+                                className="nav-link"
+                            >
+                                {language.name}
+                            </NavLink>
+                        ))}
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     );

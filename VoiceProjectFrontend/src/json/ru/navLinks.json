@@ -1,14 +1,16 @@
-[
-    {
+{
+    "main": {
         "text": "Дом",
         "link": "/ru"
     },
-    {
-        "text": "Альбом",
-        "link": "/ru/album"
-    },
-    {
-        "text": "Хронометр",
-        "link": "/ru/chronometer"
-    }
-]
+    "navLinks": [
+        {
+            "text": "Альбом",
+            "link": "/ru/album"
+        },
+        {
+            "text": "Хронометр",
+            "link": "/ru/chronometer"
+        }
+    ]
+}

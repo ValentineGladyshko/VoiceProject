@@ -1,14 +1,16 @@
-[
-    {
+{
+    "main": {
         "text": "Home",
         "link": "/en"
     },
-    {
-        "text": "Album",
-        "link": "/en/album"
-    },
-    {
-        "text": "Chronometer",
-        "link": "/en/chronometer"
-    }
-]
+    "navLinks": [
+        {
+            "text": "Album",
+            "link": "/en/album"
+        },
+        {
+            "text": "Chronometer",
+            "link": "/en/chronometer"
+        }
+    ]
+}
