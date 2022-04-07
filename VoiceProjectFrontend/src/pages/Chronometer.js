@@ -47,7 +47,8 @@ class Chronometer extends Component {
                     numberOfWords: 0,
                     numberOfSymbolsWithoutSpaces: 0,
                     time: "0 " + this.props.chronometerContent.timeNames.seconds,
-                    numberOfPages: "0 " + this.props.chronometerContent.timeNames.pages
+                    numberOfPages: "0 " + this.props.chronometerContent.timeNames.pages,
+                    outputText: ""
                 });
         }
         else {

@@ -90,7 +90,6 @@ function Home(props) {
                 </Row>
                 <HeadingPanel headingBlocks={props.homeContent.headingBlocks} />
                 <InfoPanel infoBlocks={props.homeContent.infoBlocks} />
-                {/*<hr className="bottom-divider" />*/}
             </Container>
         </>
     );
