@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VoiceProject/static/css/main.d6659c83.css",
-    "main.js": "/VoiceProject/static/js/main.fea6cec7.js",
+    "main.js": "/VoiceProject/static/js/main.8e7d2d84.js",
     "reactPlayerYouTube.js": "/VoiceProject/static/js/reactPlayerYouTube.3ad1f1c5.chunk.js",
     "reactPlayerSoundCloud.js": "/VoiceProject/static/js/reactPlayerSoundCloud.5e8e916d.chunk.js",
     "reactPlayerVimeo.js": "/VoiceProject/static/js/reactPlayerVimeo.656376df.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/bootstrap-icons.woff2?": "/VoiceProject/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
     "index.html": "/VoiceProject/index.html",
     "main.d6659c83.css.map": "/VoiceProject/static/css/main.d6659c83.css.map",
-    "main.fea6cec7.js.map": "/VoiceProject/static/js/main.fea6cec7.js.map",
+    "main.8e7d2d84.js.map": "/VoiceProject/static/js/main.8e7d2d84.js.map",
     "reactPlayerYouTube.3ad1f1c5.chunk.js.map": "/VoiceProject/static/js/reactPlayerYouTube.3ad1f1c5.chunk.js.map",
     "reactPlayerSoundCloud.5e8e916d.chunk.js.map": "/VoiceProject/static/js/reactPlayerSoundCloud.5e8e916d.chunk.js.map",
     "reactPlayerVimeo.656376df.chunk.js.map": "/VoiceProject/static/js/reactPlayerVimeo.656376df.chunk.js.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.d6659c83.css",
-    "static/js/main.fea6cec7.js"
+    "static/js/main.8e7d2d84.js"
   ]
 }
