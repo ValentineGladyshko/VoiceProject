@@ -1,6 +1,6 @@
-import { React, Component, useState } from 'react';
-import { Container, Nav, Navbar, ButtonGroup, ToggleButton } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
+import { React } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavigationBar(props) {
@@ -23,12 +23,6 @@ function NavigationBar(props) {
                         <NavLinks navLinks={props.navLinks.navLinks} />
                     </Nav>
                     <Nav>
-                        <NavLink to="/gb" className="d-flex nav-link py-0">
-                            <i className="bi bi-tiktok my-auto" style={{ fontSize: 22 }}></i>
-                        </NavLink>
-                        <NavLink to="/gb" className="d-flex nav-link py-0">
-                            <i className="bi bi-instagram my-auto" style={{ fontSize: 22 }}></i>
-                        </NavLink>
                         {languages.map((language) => (
                             <NavLink
                                 key={language.name}

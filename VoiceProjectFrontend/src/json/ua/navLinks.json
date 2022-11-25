@@ -5,10 +5,6 @@
     },
     "navLinks": [
         {
-            "text": "Альбом",
-            "link": "/ua/album"
-        },
-        {
             "text": "Хронометр",
             "link": "/ua/chronometer"
         }

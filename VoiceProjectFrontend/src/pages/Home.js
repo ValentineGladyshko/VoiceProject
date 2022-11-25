@@ -1,5 +1,5 @@
-import { React, Component, useState } from 'react';
-import { Container, Col, Row, Carousel, Button } from 'react-bootstrap';
+import { React } from 'react';
+import { Container, Col, Row, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';

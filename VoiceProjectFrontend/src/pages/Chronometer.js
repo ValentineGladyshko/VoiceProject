@@ -1,6 +1,5 @@
 import { React, Component } from 'react';
 import { Container, Col, Row, Form, Button } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './chronometer.css';
 
@@ -70,32 +69,6 @@ class Chronometer extends Component {
         this.measure("", checkboxes);
     }
 
-    //numberToWords(number) {
-    //    var result = "";
-
-    //    var numberParts = number.replace(/(?=(\d{3})+(?!\d))/g, ' ').split(' ');
-    //    if (numberParts.length > 12) {
-    //        numberParts = numberParts.slice(-12);
-    //    }
-    //    var i = numberParts.length - 1;
-    //    for (var numberPart of numberParts) {
-
-    //        var part = parseInt(numberPart);
-
-    //        if (!isNaN(part)) {
-
-    //            var hundred = Math.floor(part / 100);
-
-    //            if (hundred > 0) {
-    //                result += " " + hundred;
-    //                result += numberNames.hundreds;
-    //            }
-    //        }
-    //        //i--;
-    //    }
-    //    return result;
-    //}
-
     measure(inputText, checkboxes) {
         var text = inputText;
         var numberNames = this.props.chronometerContent.numberNames;
@@ -111,7 +84,7 @@ class Chronometer extends Component {
                 });
         }
         else {
-            var text = text.replace(/[ ]{2,}/g, " ");
+            text = text.replace(/[ ]{2,}/g, " ");
             if (checkboxes.textInBrackets) {
                 text = text.replace(/ *\([^)]*\) */g, " ");
             }
@@ -143,7 +116,7 @@ class Chronometer extends Component {
                                 part -= ten * 10
                             }
 
-                            if (i == 1 && part < 3) {
+                            if (i === 1 && part < 3) {
                                 result += numberNames.two[part] + " ";
                             }
                             else {
@@ -151,7 +124,7 @@ class Chronometer extends Component {
                             }
 
                             if (i > 0) {
-                                if (part == 1) {
+                                if (part === 1) {
                                     result += numberNames.thousands[i - 1][0] + " ";
                                 }
                                 else if (part < 5) {

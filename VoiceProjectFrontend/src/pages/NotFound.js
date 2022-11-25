@@ -1,6 +1,6 @@
 import { React } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NotFound(props) {

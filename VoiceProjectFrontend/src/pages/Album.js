@@ -1,4 +1,4 @@
-import { React, Component, useState } from 'react';
+import { React } from 'react';
 import ReactPlayer from 'react-player/lazy'
 import { Container, Col, Row, Button, ButtonGroup, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
